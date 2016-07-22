@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Handlee);
 body, input {
   font-family: 'Handlee', cursive;
-  color: #8c6239;
+  color: teal;
   font-size: 14px;
 }
 h1, h2, h3, h4 {
@@ -12,11 +12,11 @@ h1, h2, h3, h4 {
 input {
   outline: none;
   padding: 2px 5px;
-  border: solid 1px #8c6239;
+  border: solid 1px teal;
   margin: 5px;
   border-radius: 2px;
-  color: #534741;
-  background: #ffead2;
+  color: #555555;
+  background: #dedede;
 }
 input:active, input:focus {
   /*border: solid 1px #c69c6d;*/

@@ -23,6 +23,19 @@
 
 // Creates a global module. Can create routes, models, filters and directives.
 // ngResource is an additional module that defines functionality for creating resources (models)
-var badenizerApp = angular.module("badenizerApp",[ngResource]);
+var helloangular = angular.module("helloangular",[ngResource]);
+
+$scope.records = [{ title : 'one' }, { title : 'two' }, { title : 'three' }];
+
+// ----- DEPENDANCY INJECTION -----------------------
+// the controller definition
+var Ctrl = function($scope, $http, $location) {
+  //now you can use any of the injected variables
+
+  //to change the URL after something has happened then you can use $location
+  $location.path('/path/to/new/page');
+}
+//and now the injection of the variables
+Ctrl.$inject = ['$scope','$http','$location'];
 
 // badenizerApp.controller("Customerobj", Customer);
