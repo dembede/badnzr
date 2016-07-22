@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Handlee);
+body, input {
+  font-family: 'Handlee', cursive;
+  color: #8c6239;
+  font-size: 14px;
+}
+h1, h2, h3, h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+}
+input {
+  outline: none;
+  padding: 2px 5px;
+  border: solid 1px #8c6239;
+  margin: 5px;
+  border-radius: 2px;
+  color: #534741;
+  background: #ffead2;
+}
+input:active, input:focus {
+  /*border: solid 1px #c69c6d;*/
+}
+.error {
+    color: red;
+}
+.success {
+  color: green;
+}
